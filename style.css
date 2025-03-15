@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: Inter;
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 760px;
+  height: fit-content;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2.9rem;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.left > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 1.3rem;
+  font-size: 0.8rem;
+}
+
+.rigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(277, 64%, 61%);
+  width: 23rem;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+img {
+  width: 23rem;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 4.5rem;
+  margin-top: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+footer p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.small {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    margin: 2rem auto;
+  }
+
+  .rigth {
+    order: 1;
+    width: 300px;
+  }
+
+  img {
+    width: 300px;
+    height: fit-content;
+  }
+
+  .left {
+    order: 2;
+    text-align: center;
+  }
+
+  .left > p {
+    font-size: 0.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+  }
+}
